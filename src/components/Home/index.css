@@ -1,0 +1,87 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ipl-logo {
+  height: 120px;
+  width: 80px;
+  margin: 10px;
+}
+
+.ipl-heading {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+}
+
+.list-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .ipl-logo {
+    height: 100px;
+    width: 70px;
+  }
+  .ipl-heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-container {
+    flex-direction: column;
+  }
+  .ipl-logo {
+    height: 80px;
+    width: 60px;
+  }
+  .ipl-heading {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg-container {
+    padding: 10px;
+  }
+  .ipl-logo {
+    height: 60px;
+    width: 50px;
+  }
+  .ipl-heading {
+    font-size: 28px;
+  }
+  .list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

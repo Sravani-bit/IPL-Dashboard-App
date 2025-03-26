@@ -1,0 +1,55 @@
+/* Write your CSS here */
+.team-matches-container {
+  background-image: linear-gradient(to bottom, #a4261d, #1e293b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.team-banner {
+  height: 450px;
+  justify-self: center;
+  margin: 10px;
+  max-width: 100%;
+}
+
+.match-card-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .team-banner {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-banner {
+    height: 300px;
+  }
+  .match-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-banner {
+    height: 250px;
+  }
+  .match-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

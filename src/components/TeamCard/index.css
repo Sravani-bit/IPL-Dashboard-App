@@ -1,0 +1,70 @@
+/* Write your CSS here */
+.match-card-container {
+  width: 40vw;
+  border-radius: 10px;
+  background-color: #ffffff33;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-image {
+  height: 200px;
+  width: 160px;
+  max-width: 100%;
+}
+
+.team-name {
+  font-size: 28px;
+  font-family: 'Bree Serif', serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .match-card-container {
+    width: 45vw;
+    padding: 15px;
+  }
+  .team-image {
+    height: 180px;
+    width: 140px;
+  }
+  .team-name {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .match-card-container {
+    width: 60vw;
+    flex-direction: column;
+    padding: 12px;
+  }
+  .team-image {
+    height: 150px;
+    width: 120px;
+  }
+  .team-name {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .match-card-container {
+    width: 80vw;
+    padding: 10px;
+  }
+  .team-image {
+    height: 120px;
+    width: 100px;
+  }
+  .team-name {
+    font-size: 18px;
+  }
+}

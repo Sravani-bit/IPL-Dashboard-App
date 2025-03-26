@@ -1,0 +1,77 @@
+/* Write your CSS here */
+.latest-match-container {
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: 'Bree Serif', serif;
+  padding: 35px;
+  align-items: center;
+  font-size: 18px;
+  justify-self: center;
+  border-radius: 10px;
+}
+
+.team-name {
+  font-size: 32px;
+}
+
+.date {
+  font-size: 28px;
+}
+
+.competing-logo {
+  height: 200px;
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .latest-match-container {
+    padding: 25px;
+    font-size: 16px;
+  }
+  .team-name {
+    font-size: 28px;
+  }
+  .date {
+    font-size: 24px;
+  }
+  .competing-logo {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .latest-match-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .team-name {
+    font-size: 24px;
+  }
+  .date {
+    font-size: 20px;
+  }
+  .competing-logo {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .latest-match-container {
+    padding: 15px;
+  }
+  .team-name {
+    font-size: 20px;
+  }
+  .date {
+    font-size: 18px;
+  }
+  .competing-logo {
+    height: 120px;
+  }
+}
